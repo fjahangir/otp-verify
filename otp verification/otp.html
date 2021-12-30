@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="
+width=device-width,
+  initial-scale=1.0">
+  <title>Autofocus Fielf</title> 
+  <link rel="stylesheet" type="text/css" href="otp.css">
+</head>
+<body>
+    <div class="topnav">
+        <a class="active" href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <input type="text" placeholder="Search..">
+      </div>
+
+    
+    <div class="container">
+
+    <h1> ENTER OTP</h1>
+<div class="userInput">
+        <input type="text" id='ist'    maxlength="1" onkeyup="clickevent(this,'sec')">
+        <input type="text" id='sec'    maxlength="1"  onkeyup="clickevent(this,'third')"> 
+        <input type="text" id='third'  maxlength="1" onkeyup="clickevent(this,'fourth')">
+        <input type="text" id='fourth' maxlength="1" onkeyup="clickevent(this,'fifth')">
+        <input type="text" id='fifth'  maxlength="1" onkeyup="clickevent(this,'sixth')">
+        <input type="text" id='sixth'   maxlength="1">
+        
+    </div>
+    <button>CONFIRM</button>
+    
+    </div>
+    
+    <script type="text/javascript">
+        function clickevent(first,last){
+            if(first.value.length){
+                document.get.ElementById(last).focus();
+            }
+        }
+
+
+
+    </script>
+    <footer class="page-footer mt-auto">
+        <h1 class="text-center text-white">I'm the footer</h1>
+        <p>Already have an account? <a href="#">Sign in</a>.</p>
+    </footer>
+</body>
+</html>
